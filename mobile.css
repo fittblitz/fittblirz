@@ -196,3 +196,7 @@ width:100%;
     justify-content:space-between;
     width:100%;
 }
+.form-content h1{
+    font-family:playwrite;
+    margin:30px 0px;
+}
