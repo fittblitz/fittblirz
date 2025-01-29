@@ -238,9 +238,7 @@ width:100%;
 }
 .ser-hed-cont{
     background-color:rgba(0,0,0,0.2);
-    opacity: 0;
-    margin:10px 0;
-    visibility: hidden;  
+    margin:10px 0; 
     transition-duration:0.2s;
     border-radius:20px;
     overflow:hidden;
@@ -249,7 +247,6 @@ width:100%;
     padding:20px;
     position:relative;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
-    border:3px solid white;
 }
 .ser-hed-cont p{
     color:white;
