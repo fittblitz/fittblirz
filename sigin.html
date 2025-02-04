@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Account</title>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="signstyle.css">
+        <link rel="stylesheet" href="signstylemobile.css" media="screen and (max-width:480px)">
+    </head>
+    <body>
+      <div class="box">
+        <div class="img"></div>
+        <div class="form">
+            <div class="form-content">
+                <div class="logo-img">
+                    <img src="logo3.png">
+                </div>
+            <form action="" method="POST">
+                <input type="text" name="fullname" placeholder="Enter Full Name">
+                <input type="email" name="email" placeholder="Enter Email">
+                <input type="password" name="pass" placeholder="Enter Password">
+                <input type="password" name="conpass" placeholder="Confirm Password">
+                <input type="button" value="Submit" id="btn-sub">
+            </form>
+        </div>
+        </div>
+      </div>
+
+
+
+        <script>
+            let open = document.querySelector("#openNav");
+            let close = document.querySelector("#closeNav");
+            let content = document.querySelector("#menu-content");
+            open.addEventListener('click', function(){
+                content.style.height = "100%";
+            });
+            close.addEventListener('click', function(){
+                content.style.height = "0";
+            });
+
+        </script>
+    </body>
+</html>
