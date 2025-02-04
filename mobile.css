@@ -67,7 +67,7 @@ height:40px;
     padding:0px 30px;
     text-align:center;
 }
-.about{
+.about-mob{
     padding:10px 20px;
     display:grid;
     grid-template-columns:auto;
@@ -76,6 +76,9 @@ height:40px;
     align-items:center;
     margin:30px 0;
     width:100%;
+}
+.about{
+   display:none;
 }
 .about-box-1{
     display:grid;
@@ -91,7 +94,10 @@ height:40px;
 }
 .sub-about img{
     border-radius:20px;
+    float:none;
+    margin:0px;
 }
+
 .about-box-2 p{
     line-height:30px;
 }
@@ -261,3 +267,4 @@ text-align:left;
         background-position:center;
         background-repeat:no-repeat;
     }
+
