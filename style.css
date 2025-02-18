@@ -496,52 +496,35 @@ color:white;
 }
 form{
     display:grid;
-    grid-template-rows:auto auto auto auto;
-    grid-template-columns:auto;
-    justify-content:center;
     background-color:black;
-    padding:50px;
 }
 form input{
-padding:10px 20px;
-margin:10px 20px;
-width:300px;
+padding:15px 20px;
+margin:10px;
+width:100%;
 outline:none;
 background-color:rgb(40,40,40);
 color:white;
 border:none;
+border-radius:5px;
 }
 form select{
-    padding:10px 20px;
-margin:10px 20px;
-width:300px;
+    padding:15px 20px;
+margin:10px;
+width:100%;
 background-color:rgb(40,40,40);
 color:white;
+border-radius:5px;
 border:none;
 }
 form label{
-    border-bottom:1px solid white;
 display:block;
-margin:10px 20px;
+margin:10px;
 }
-.form-box-1, .form-box-2, .form-box-3{
-    display:grid;
-    grid-template-columns:auto auto;
-    grid-template-rows:auto;
-    align-items:center;
-    justify-content:space-between;
-    width:800px;
+#sub{
+    background-color:orangered;
 }
-.form-box-4{
-    margin:20px 0px;
-}
-.form-box-4 input{
-background-color:rgb(200, 92, 30);
-cursor: pointer;
-}
-.form-box-4 input:hover{
-    background-color:rgb(238, 107, 30);
-    }
+
 
 footer, .copyright{
     background-color:black;
