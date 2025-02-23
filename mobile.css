@@ -58,14 +58,53 @@ nav{
     width:130px;
 height:40px;
 }
-.sub-img-container h1{
-    color:white;
-    font-size:30px;
+#img-content{
     width:100%;
-    letter-spacing:0px;
+    height:100%;
+    top:0;
+    left:0;
+    transition: opacity 1.5s ease-in-out;
+    opacity:0;
+    position:absolute;
+}
+.header-box{
+    display:grid;
+    grid-template-columns:auto;
+border:1px solid black;
+border-bottom-right-radius:60px;
+border-bottom-left-radius:60px;
+}
+.sub-header-box-1{
+    position:relative;
+    height:400px;
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius:30px;
+}
+.sub-header-box-2{
+    padding:20px 20px;
+display:grid;
+grid-template-rows:auto auto;
+background-color:black;
+height:300px;
+border-bottom-right-radius:50px;
+border-bottom-left-radius:50px;
+}
+
+#img-head{
+    border-radius:10px;
+    transition: opacity 1.5s ease-in-out;
+    opacity:0;
+    position:absolute;
+}
+#img-head.active{
+    opacity:1;
+}
+#img-head h1{
+    font-size:40px;
+    width:350px;
+    letter-spacing:1px;
     margin:0px;
-    padding:0px 30px;
-    text-align:center;
+    color:white;
 }
 .about-mob{
     padding:10px 20px;
@@ -74,7 +113,7 @@ height:40px;
     grid-template-rows:auto auto;
     justify-content:center;
     align-items:center;
-    margin:30px 0;
+    margin:17vh 0;
     width:100%;
 }
 .about{
@@ -188,20 +227,35 @@ width:100%;
 }
   form{
     display:grid;
-    grid-template-rows:auto auto auto auto;
-    grid-template-columns:auto;
-    justify-content:center;
-    background-color:black;
-    padding:0px;
+    padding:10px 0px;
 }
-  .form-box-1, .form-box-2, .form-box-3{
-    display:grid;
-    grid-template-columns:auto;
-    grid-template-rows:auto auto;
-    align-items:center;
-    justify-content:space-between;
+form input{
+    padding:20px 20px;
+    margin:10px 0;
     width:100%;
-}
+    outline:none;
+    background-color:rgb(40,40,40);
+    color:white;
+    border:none;
+    border-radius:5px;
+    display:block;
+    font-size:20px;
+    }
+    form select{
+        padding:20px 20px;
+    margin:10px 0;
+    font-size:20px;
+    width:100%;
+    background-color:rgb(40,40,40);
+    color:white;
+    border-radius:5px;
+    border:none;
+    }
+    form label{
+    display:block;
+    margin-bottom:-15px;
+    font-size:20px;
+    }
 .form-content h1{
     font-family:playwrite;
     margin:30px 0px;
