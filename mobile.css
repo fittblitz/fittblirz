@@ -85,9 +85,9 @@ border-bottom-left-radius:60px;
 display:grid;
 grid-template-rows:auto auto;
 background-color:black;
-height:300px;
-border-bottom-right-radius:50px;
-border-bottom-left-radius:50px;
+height:350px;
+border-bottom-right-radius:30px;
+border-bottom-left-radius:30px;
 }
 
 #img-head{
