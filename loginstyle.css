@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+@font-face {
+    font-family: roboto;
+    src: url('Roboto-Light.ttf');
+}
+@font-face {
+    font-family: raleway;
+    src: url('Raleway-Medium.ttf');
+}
+@font-face{
+    font-family:playwrite;
+    src:url('PlaywriteVN-Regular.ttf');
+}
+body{
+    background-image:url('img5.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.box{
+    background-color:rgba(0,0,0,0.3);
+    height:100vh;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+}
+form{
+    background-color:rgb(20,20,20);
+    border-radius:10px;
+    padding:20px;
+}
+input{
+    display:block;
+    width:100%;
+    padding:12px 10px;
+    border-radius:5px;
+    margin:20px 0px;
+    background-color:rgb(40,40,40);
+    border:none;
+    outline:none;
+    font-size:16px;
+    color:white;
+}
+#btn{
+    background-color:orangered;
+    cursor: pointer;
+}
+label{
+    color:white;
+    font-size:38px;
+}
+
+.message-style{
+    color:white;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+}
+.messagebox{
+    margin:20px;
+}
+.formbox{
+    background-color:rgb(20,20,20);
+    padding:15px 10px;
+    border-radius:5px;
+}
+
+@media only screen and (max-width:480px){
+    .box{
+        background-color:rgba(0,0,0,0.5);
+        height:100vh;
+        display:grid;
+        justify-content:center;
+        align-items:center;
+    }
+}

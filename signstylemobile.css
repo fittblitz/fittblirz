@@ -1,7 +1,8 @@
 .box{
     display:grid;
-    grid-template-columns: 0% 100%;
+    grid-template-columns: 0% auto;
     grid-template-rows:auto;
+    width:100%;
 }
 .form-content{
     padding:25px;

@@ -9,15 +9,6 @@ function nextslide(){
 
 setInterval(nextslide, 3000);
 
-const imgcontent = document.querySelectorAll("#img-head");
-let currentIndex2 = 0;
-function secondslide(){
-    imgcontent[currentIndex2].classList.remove("active");
-    currentIndex2 = (currentIndex2 + 1) % imgcontent.length;
-    imgcontent[currentIndex2].classList.add("active");
-}
-
-setInterval(secondslide, 3000);
 
 const openNav = document.getElementById("openNav");
 const closeNav = document.getElementById("closeNav");

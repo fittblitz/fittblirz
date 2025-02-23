@@ -54,6 +54,7 @@ height:60px;
     margin-left:10vh;
     margin-right:10vh;
     border-radius:10px;
+    text-align:center;
 }
 input{
     display:block;
@@ -66,6 +67,23 @@ input{
     outline:none;
     border-radius:4px;
 }
-#btn-sub{
+.btn2{
     background-color:orangered;
+}
+a{
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    background-color:rgb(20,20,20);
+    border-radius:5px;
+    padding:7px 10px;
+}
+.messagebox{
+padding:5px;
+margin:5px;
+text-align:center;
+}
+.messagestyle{
+    color:white;
+    text-align:center;
 }

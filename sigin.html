@@ -16,13 +16,15 @@
                 <div class="logo-img">
                     <img src="logo3.png">
                 </div>
-            <form action="" method="POST">
-                <input type="text" name="fullname" placeholder="Enter Full Name">
-                <input type="email" name="email" placeholder="Enter Email">
-                <input type="password" name="pass" placeholder="Enter Password">
-                <input type="password" name="conpass" placeholder="Confirm Password">
-                <input type="button" value="Submit" id="btn-sub">
+            <form action="http://localhost:3000/signupform" method="POST">
+                <div class="messagebox" id="message-box"></div>
+                <input type="text" name="fullname" placeholder="Enter Full Name" id="username">
+                <input type="email" name="email" placeholder="Enter Email" id="useremail">
+                <input type="password" name="pass" placeholder="Enter Password" id="userpassword">
+                <input type="password" name="conpass" placeholder="Confirm Password" id="userconfirmpassword">
+                <input type="submit" value="Submit" id="btn-sub" class="btn2">
             </form>
+            <a href="login.html">Login Account</a>
         </div>
         </div>
       </div>
@@ -30,15 +32,55 @@
 
 
         <script>
-            let open = document.querySelector("#openNav");
-            let close = document.querySelector("#closeNav");
-            let content = document.querySelector("#menu-content");
-            open.addEventListener('click', function(){
-                content.style.height = "100%";
+            const button = document.querySelector("#btn-sub");
+            button.addEventListener("click", async function(event){
+                event.preventDefault();
+                const username = document.querySelector("#username");
+                const useremail = document.querySelector("#useremail");
+                const userpassword = document.querySelector("#userpassword");
+                const userconfirmpassword = document.querySelector("#userconfirmpassword");
+
+                const values = [username, useremail, userpassword, userconfirmpassword];
+
+                const response = await fetch('/signupform', {
+                    method: "POST",
+                    headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                    body: new URLSearchParams({
+                        fullname:username.value,
+                        email:useremail.value,
+                        pass:userpassword.value,
+                        conpass:userconfirmpassword.value
+                    })
+                });
+                const result = await response.json();
+
+                const messagebox = document.querySelector("#message-box");
+                messagebox.innerHTML = '';
+
+                const message = document.createElement("span");
+                message.classList.add("messagestyle");
+                messagebox.appendChild(message);
+
+
+                if(values.some(input => input.value.trim() === '')){
+                    message.innerHTML = 'Please fill out form';
+                    return;
+                }else if(userpassword.value !== userconfirmpassword.value){
+                    message.innerHTML = 'Password do not match';
+                    userconfirmpassword.style.border = '1px solid red';
+                    return;
+                }else if(result.success){
+                    message.textContent = result.message;
+                    window.location.href = result.redirect;
+                    console.log(result);
+                }else{
+                    message.innerHTML = result.message || 'Something went wrong!';
+                    message.style.color = result.message && result.message.includes("already exists") ? 'red' : 'orange';
+                }
+                
+
             });
-            close.addEventListener('click', function(){
-                content.style.height = "0";
-            });
+
 
         </script>
     </body>

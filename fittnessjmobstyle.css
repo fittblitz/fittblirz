@@ -1,0 +1,252 @@
+nav{
+    justify-content:space-between;
+    padding:20px 20px;
+}
+.box-2{
+    display:none;
+}
+.box-2-mobile{
+    display:grid;
+    grid-template-columns:auto;
+    justify-content:center;
+    align-items:center;
+}
+
+.line div{
+    width:40px;
+    padding:2px;
+    margin:5px;
+    background-color:white;
+}
+.box-2-mobile-content{
+    background-color:black;
+    width:100%;
+    position:absolute;
+    height:0;
+    top:0;
+    left:0;
+    z-index:1;
+    overflow:hidden;
+    transition:0.5s;
+}
+.menulist a{
+    text-decoration:none;
+    color:white;
+    padding:20px 20px;
+    transition-duration:0.3s;
+    border-radius:0px;
+    display:block;
+    font-size:25px;
+}
+.croxbtn{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+}
+.croxbtn button{
+    border:none;
+    padding:12px 20px;
+    border:1px solid white;
+    font-size:25px;
+    color:white;
+    background-color:black;
+    border-radius:30px;
+    
+}
+.croxbtn img{
+    width:130px;
+height:40px;
+}
+.sub-img-container h1{
+    color:white;
+    font-size:30px;
+    width:100%;
+    letter-spacing:0px;
+    margin:0px;
+    padding:0px 30px;
+    text-align:center;
+}
+.about-mob{
+    padding:10px 20px;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto auto;
+    justify-content:center;
+    align-items:center;
+    margin:30px 0;
+    width:100%;
+}
+
+.intro{
+    background-image:url('jo.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:500px;
+}
+.black-shade{
+    background:radial-gradient(circle, rgba(0,0,0,0.5), rgba(0,0,0,1.0));
+    height:500px;
+    display:grid;
+    justify-content:center;
+    padding:10px 30px;
+}
+
+.black-shade div{
+text-align:none;
+color:white;
+display:grid;
+grid-template-columns:50% auto;
+    grid-template-rows:auto auto;
+}
+.black-shade div h1{
+    font-size:70px;
+    text-align:left;
+}
+.black-shade div h3{
+font-size:20px;
+margin:10px 0;
+text-align: right;
+}
+.blackbtn{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+}
+.black-shade div a{
+    text-decoration:none;
+    background-color:white;
+    color:black;
+    width:120px;
+    font-weight: bold;
+    padding:10px 20px;
+    box-shadow:0px 0px 10px 5px rgba(0,0,0,0.0);
+    border-radius:20px;
+    transition-duration: 0.2s;
+}
+.black-shade div a:hover{
+    box-shadow:0px 0px 1px 2px rgba(250,250,250, 0.6);
+    transition-duration: 0.2s;
+}
+
+footer, .copyright{
+    background-color:black;
+    color:white;
+    padding:20px 1vh;
+}
+footer{
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto;
+    justify-content:space-between;
+}
+.f-box-1 img{
+    width:240px;
+    height:220px;
+}
+.f-box-2{
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto;
+    justify-content:space-between;
+align-items:start;
+text-align:left;
+}
+.child-f-box-2 h2{
+    display:block;
+    text-align:left;
+    }
+    .child-f-box-2 a{
+        display:block;
+        text-decoration:none;
+        color:white;
+        padding:10px 20px;
+     text-align:left;
+    margin:30px 0;
+    transition-duration:0.3s;
+    }
+
+    .journey-content{
+        padding:20px 50px;
+        
+    }
+    
+    .why-aware{
+        padding:20px 20px;
+    }
+    .why-aware h1{
+        padding:10px 0;
+    }
+    .why-aware ul{
+        margin:10px 30px;
+    }
+    .why-aware p{
+        padding:10px 0;
+    }
+    
+    
+    .set-goal{
+        padding:20px 20px;
+    }
+    .set-goal h1{
+        padding:10px 0;
+    }
+    .set-goal ul{
+        margin:10px 30px;
+    }
+    .set-goal p{
+        padding:10px 0;
+    }
+    
+    
+    
+    .nutrition-plan{
+        padding:20px 20px;
+    }
+    .nutrition-plan h1{
+        padding:10px 0;
+    }
+    .nutrition-plan ul{
+        margin:10px 30px;
+    }
+    .nutrition-plan h2{
+        padding:10px 0;
+    }
+    .nutrition-plan p{
+        padding:10px 0;
+    }
+    
+    .Workout{
+        padding:20px 20px;
+    }
+    .Workout ul{
+        margin:10px 30px;
+    }
+    .Workout h1{
+        padding:10px 0;
+    }
+    .Workout h2{
+        padding:10px 0;
+    }
+    .Workout p{
+        padding:10px 0;
+    }
+    
+    .tracking{
+        padding:20px 20px;
+    }
+    .tracking ul{
+        margin:10px 30px;
+    }
+    .tracking h1{
+        padding:10px 0;
+    }
+    .tracking h2{
+        padding:10px 0;
+    }
+    .tracking    p{
+        padding:10px 0;
+    }
+    
+    

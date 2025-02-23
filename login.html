@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Login | Fittblitz</title>
+        <link rel="stylesheet" href="loginstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+<div class="box">
+    <div class="formbox">
+        <form action="http://localhost:3000/loginform" method="POST">
+            <center><label>Login</label></center>
+            <div class="messagebox"></div>
+            <input type="email" name="email" placeholder="Email" id="useremail">
+            <input type="password" name="password" placeholder="Password" id="userpassword">
+            <input type="submit" value="Login" id="btn" class="subbtn">
+        </form>
+    </div>
+</div>
+
+
+        <script>
+            const button = document.querySelector(".subbtn");
+            button.addEventListener('click', function(event){
+                event.preventDefault();
+                const useremail = document.querySelector("#useremail").value;
+            const userpassword = document.querySelector("#userpassword").value;
+            const messagebox = document.querySelector('.messagebox');
+            messagebox.innerHTML = '';
+
+                const message = document.createElement("span");
+                message.classList.add("message-style");
+                messagebox.appendChild(message);
+                
+                if(useremail === '' && userpassword === ''){
+                    message.innerHTML = 'Please enter email and password';
+                }else if(useremail === ''){
+                    message.innerHTML = 'Please enter email';
+                }else if(userpassword === ''){
+                    message.innerHTML = 'Please enter password';
+                }else{
+                    document.querySelector("form").submit();
+                }
+    
+            });
+            
+        </script>
+    </body>
+</html>
