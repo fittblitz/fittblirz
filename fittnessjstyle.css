@@ -112,7 +112,7 @@ margin:10px 0;
 }
 
 .journey-content{
-    padding:20px 20vh;
+    padding:20px 10vh;
 }
 
 .why-aware{
@@ -120,38 +120,51 @@ margin:10px 0;
 }
 .why-aware h1{
     padding:10px 0;
+    font-size:16vh;
 }
 .why-aware ul{
     margin:10px 30px;
 }
 .why-aware p{
     padding:10px 0;
+    font-size:20px;
 }
 
 
 .set-goal{
-    padding:20px 20px;
+    padding:20px 30px;
+    background-color:#FF86C8;
+    color:#1D1805;
+    margin:10px;
+    border-radius:20px;
 }
 .set-goal h1{
     padding:10px 0;
+    font-size:8vh;
 }
 .set-goal ul{
     margin:10px 30px;
+    line-height:22px;
 }
 .set-goal p{
     padding:10px 0;
 }
 
 
-
 .nutrition-plan{
-    padding:20px 20px;
+    padding:20px 30px;
+    background-color:#FFBF81;
+    margin:10px;
+    border-radius:20px;
+    color:#540F4B;
 }
 .nutrition-plan h1{
     padding:10px 0;
+    font-size:8vh;
 }
 .nutrition-plan ul{
     margin:10px 30px;
+    line-height:22px;
 }
 .nutrition-plan h2{
     padding:10px 0;
@@ -160,14 +173,25 @@ margin:10px 0;
     padding:10px 0;
 }
 
+.container-two-box{
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto;
+    margin:3vh 10px;
+}
+
+
 .Workout{
     padding:20px 20px;
 }
 .Workout ul{
     margin:10px 30px;
+    line-height:30px;
+    width:400px;
 }
 .Workout h1{
     padding:10px 0;
+    font-size:16vh;
 }
 .Workout h2{
     padding:10px 0;
@@ -176,14 +200,39 @@ margin:10px 0;
     padding:10px 0;
 }
 
+.sub-container-workout{
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto;
+    padding:0px;
+    margin:20px 0px;
+    background-color:lightgray;
+    border-radius:20px;
+}
+.sub-container-workout div{
+    padding:30px;
+}
+
+#workoutimg{
+    background-image:url(workoutimage.jpg);
+    background-position:center;
+    background-size:cover;
+    width:500px;
+    height:350px;
+border-radius:20px;
+}
+
+
 .tracking{
     padding:20px 20px;
 }
 .tracking ul{
     margin:10px 30px;
+    line-height:25px;
 }
 .tracking h1{
     padding:10px 0;
+    font-size:16vh;
 }
 .tracking h2{
     padding:10px 0;
@@ -192,7 +241,74 @@ margin:10px 0;
     padding:10px 0;
 }
 
+.tracking   a{
+    text-decoration:none;
+    background-color:black;
+    padding:10px 20px;
+    color:white;
+    border-radius:20px;
+        }
 
+.track-container{
+    background-color:lightgray;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto;
+    padding:25px;
+    margin:20px 0px;
+    border-radius:20px;
+}
+.track-img img{
+    width:500px;
+    height:380px;
+    border-radius:20px;
+}
+
+        
+        .form{
+            padding:20vh 20vh;
+            width:100%;
+            background-color:black;
+            color:white;
+            }
+            .form-content h1{
+                font-family:playwrite;
+                margin:30px 0px;
+            }
+            .form-content p{
+                margin:20px 0;
+            }
+            form{
+                display:grid;
+                background-color:black;
+            }
+            form input{
+            padding:15px 20px;
+            margin:10px;
+            width:100%;
+            outline:none;
+            background-color:rgb(40,40,40);
+            color:white;
+            border:none;
+            border-radius:5px;
+            }
+            form select{
+                padding:15px 20px;
+            margin:10px;
+            width:100%;
+            background-color:rgb(40,40,40);
+            color:white;
+            border-radius:5px;
+            border:none;
+            }
+            form label{
+            display:block;
+            margin:10px;
+            }
+            #sub{
+                background-color:orangered;
+            }
+            
 
 footer, .copyright{
     background-color:black;
